@@ -1,0 +1,68 @@
+{
+  "def_in":"{ %cx %bx %sf %of }",
+  "live_out":"{ %bx }",
+  "def_in_formal":"{ %cx %bx %sf %of }",
+  "live_out_formal":"{ %bx }",
+  "search_without_uif":false,
+  "data":[
+    
+  ],
+  "initial_searches":[
+    {
+      "success":false,
+      "budget":200000,
+      "iterations":200000,
+      "start_ptime":64
+    },
+    {
+      "success":true,
+      "budget":200032,
+      "iterations":41528,
+      "start_ptime":279
+    }
+  ],
+  "secondary_searches":[
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":279
+    },
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":1811399,
+      "start_ptime":311
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":318
+    }
+  ],
+  "equivalence_classes":{
+    "unorderedClasses":[
+      {
+        "programs":[
+          {
+            "program":"result-00000.s",
+            "score":{
+              "uif":0,
+              "mult":0,
+              "nodes":25
+            }
+          },
+          {
+            "program":"result-00001.s",
+            "score":{
+              "uif":0,
+              "mult":0,
+              "nodes":23
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "def_in":"{ %xmm2 %mxcsr::rc[0] }",
+  "live_out":"{ %ymm1 }",
+  "def_in_formal":"{ %xmm2 %mxcsr::rc[0] }",
+  "live_out_formal":"{ %ymm1 }",
+  "search_without_uif":false,
+  "data":[
+    
+  ],
+  "initial_searches":[
+    {
+      "success":true,
+      "budget":200000,
+      "iterations":105396,
+      "start_ptime":124
+    }
+  ],
+  "secondary_searches":[
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":125
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":187
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":244
+    }
+  ],
+  "equivalence_classes":{
+    "unorderedClasses":[
+      {
+        "programs":[
+          {
+            "program":"result-00000.s",
+            "score":{
+              "uif":2,
+              "mult":0,
+              "nodes":12
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

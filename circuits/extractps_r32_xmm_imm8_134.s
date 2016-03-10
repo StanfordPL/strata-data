@@ -1,0 +1,19 @@
+  .text
+  .globl target
+  .type target, @function
+
+#! file-offset 0
+#! rip-offset  0
+#! capacity    7 bytes
+
+# Text                                            #  Line  RIP   Bytes  Opcode                  
+.target:                                          #        0     0      OPC=<label>             
+  callq .move_128_032_xmm1_xmm8_xmm9_xmm10_xmm11  #  1     0     5      OPC=callq_label         
+  movq %xmm10, %xmm4                              #  2     0x5   5      OPC=movq_xmm_xmm        
+  vmaxpd %xmm10, %xmm4, %xmm1                     #  3     0xa   5      OPC=vmaxpd_xmm_xmm_xmm  
+  xorl %ebx, %ebx                                 #  4     0xf   2      OPC=xorl_r32_r32        
+  callq .move_128_064_xmm1_r10_r11                #  5     0x11  5      OPC=callq_label         
+  cmovbel %r10d, %ebx                             #  6     0x16  4      OPC=cmovbel_r32_r32     
+  retq                                            #  7     0x1a  1      OPC=retq                
+                                                                                                
+.size target, .-target

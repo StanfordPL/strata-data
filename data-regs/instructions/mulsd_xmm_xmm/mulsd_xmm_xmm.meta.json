@@ -1,0 +1,70 @@
+{
+  "def_in":"{ %xmm1 %xmm2 }",
+  "live_out":"{ %xmm1 }",
+  "def_in_formal":"{ %xmm1 %xmm2 }",
+  "live_out_formal":"{ %xmm1 }",
+  "search_without_uif":false,
+  "data":[
+    
+  ],
+  "initial_searches":[
+    {
+      "success":true,
+      "budget":200000,
+      "iterations":163573,
+      "start_ptime":66
+    }
+  ],
+  "secondary_searches":[
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":501823,
+      "start_ptime":67
+    },
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":1626882,
+      "start_ptime":74
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":87
+    }
+  ],
+  "equivalence_classes":{
+    "unorderedClasses":[
+      {
+        "programs":[
+          {
+            "program":"result-00000.s",
+            "score":{
+              "uif":1,
+              "mult":0,
+              "nodes":10
+            }
+          },
+          {
+            "program":"result-00001.s",
+            "score":{
+              "uif":1,
+              "mult":0,
+              "nodes":10
+            }
+          },
+          {
+            "program":"result-00002.s",
+            "score":{
+              "uif":1,
+              "mult":0,
+              "nodes":10
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

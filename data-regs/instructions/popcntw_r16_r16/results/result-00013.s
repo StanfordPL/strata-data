@@ -1,0 +1,15 @@
+  .text
+  .globl target
+  .type target, @function
+
+#! file-offset 0
+#! rip-offset  0
+#! capacity    6 bytes
+
+# Text                #  Line  RIP  Bytes  Opcode               
+.target:              #        0    0      OPC=<label>          
+  movzwl %cx, %r11d   #  1     0    4      OPC=movzwl_r32_r16   
+  popcntq %r11, %rbx  #  2     0x4  5      OPC=popcntq_r64_r64  
+  retq                #  3     0x9  1      OPC=retq             
+                                                                
+.size target, .-target

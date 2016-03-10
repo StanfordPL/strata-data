@@ -1,0 +1,70 @@
+{
+  "def_in":"{ %rbx }",
+  "live_out":"{ %ymm1 }",
+  "def_in_formal":"{ %rbx }",
+  "live_out_formal":"{ %ymm1 }",
+  "search_without_uif":false,
+  "data":[
+    
+  ],
+  "initial_searches":[
+    {
+      "success":true,
+      "budget":200000,
+      "iterations":64585,
+      "start_ptime":88
+    }
+  ],
+  "secondary_searches":[
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":196989,
+      "start_ptime":91
+    },
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":17014,
+      "start_ptime":94
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":95
+    }
+  ],
+  "equivalence_classes":{
+    "unorderedClasses":[
+      {
+        "programs":[
+          {
+            "program":"result-00000.s",
+            "score":{
+              "uif":0,
+              "mult":0,
+              "nodes":12
+            }
+          },
+          {
+            "program":"result-00001.s",
+            "score":{
+              "uif":0,
+              "mult":0,
+              "nodes":7
+            }
+          },
+          {
+            "program":"result-00002.s",
+            "score":{
+              "uif":0,
+              "mult":0,
+              "nodes":7
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

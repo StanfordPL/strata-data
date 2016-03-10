@@ -1,0 +1,82 @@
+{
+  "def_in":"{ %xmm1 %xmm2 %xmm3 }",
+  "live_out":"{ %ymm1 }",
+  "def_in_formal":"{ %xmm1 %xmm2 %xmm3 }",
+  "live_out_formal":"{ %ymm1 }",
+  "search_without_uif":false,
+  "data":[
+    
+  ],
+  "initial_searches":[
+    {
+      "success":false,
+      "budget":200000,
+      "iterations":200000,
+      "start_ptime":51
+    },
+    {
+      "success":true,
+      "budget":318062,
+      "iterations":141710,
+      "start_ptime":64
+    }
+  ],
+  "secondary_searches":[
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":64
+    },
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":1255122,
+      "start_ptime":137
+    },
+    {
+      "n_found":1,
+      "budget":10000000,
+      "iterations":331585,
+      "start_ptime":145
+    },
+    {
+      "n_found":0,
+      "budget":10000000,
+      "iterations":10000000,
+      "start_ptime":146
+    }
+  ],
+  "equivalence_classes":{
+    "unorderedClasses":[
+      {
+        "programs":[
+          {
+            "program":"result-00000.s",
+            "score":{
+              "uif":8,
+              "mult":0,
+              "nodes":42
+            }
+          },
+          {
+            "program":"result-00001.s",
+            "score":{
+              "uif":8,
+              "mult":0,
+              "nodes":42
+            }
+          },
+          {
+            "program":"result-00002.s",
+            "score":{
+              "uif":8,
+              "mult":0,
+              "nodes":42
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
