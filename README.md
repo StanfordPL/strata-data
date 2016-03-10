@@ -1,0 +1,1 @@
+This repository contains experimental results for the strata project.  For the imm8 experiment, the full data is too big and so only the final output and the logs are in the repository.  See https://github.com/StanfordPL/strata for more information.
